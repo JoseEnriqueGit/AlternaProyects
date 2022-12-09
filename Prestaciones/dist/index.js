@@ -13,9 +13,9 @@ const users = [
     { id: 2, name: "Marcos" },
     { id: 3, name: "Juan" },
 ];
-// app.get("/", function (req, res) {
-//   res.json(users);
-// });
+app.get("/", function (req, res) {
+    res.json(users);
+});
 // Motrar todos lo usuarios
 app.get("/allusers", function (req, res) {
     res.json(users);
