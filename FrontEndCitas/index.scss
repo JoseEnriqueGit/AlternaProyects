@@ -1,0 +1,126 @@
+// Colors
+$Bg: #222531;
+$Wh: #fff;
+$Pri: #323546;
+$Sec: #d9d9d9;
+$Ter: #49cc68;
+@import url("https://fonts.googleapis.com/css2?family=Itim&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	min-height: 100vh;
+	background-color: $Bg;
+
+	font-family: "Itim", cursive;
+	font-family: "Rubik", sans-serif;
+
+	form {
+		display: flex;
+		justify-content: center;
+		padding: 20px;
+		min-width: 500px;
+		min-height: 400px;
+		background-color: $Pri;
+
+		// Typografy
+		color: $Sec;
+
+		border-radius: 10px;
+
+		fieldset {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 20px;
+			border: none;
+			gap: 10px;
+
+			legend {
+				text-align: center;
+				font-size: x-large;
+				font-weight: bold;
+			}
+			label {
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+
+				input {
+					// Box-model
+					width: 320px;
+					padding: 5px 8px;
+					height: 1.25rem;
+					// Visual
+					border: solid 2px rgba($color: $Ter, $alpha: 0);
+					border-radius: 5px;
+					outline: none;
+					background-color: $Wh;
+					// Typography
+					color: $Bg;
+					font-size: medium;
+					font-weight: 600;
+					// Visual effects
+					transition: all 0.2s;
+				}
+				input:focus {
+					// Visual
+					border: solid 2px rgba($color: $Ter, $alpha: 1);
+					// Visual effects
+					transition: all 0.2s;
+				}
+
+				textarea {
+					// Box-model
+					height: 100px;
+					padding: 5px 8px;
+					min-width: 320px;
+					resize: none;
+					// Visual
+					border: solid 2px rgba($color: $Ter, $alpha: 0);
+					border-radius: 5px;
+					outline: none;
+					background-color: $Wh;
+					// Typography
+					color: $Bg;
+					font-size: medium;
+					font-weight: 500;
+					// Visual effects
+					transition: all 0.2s;
+				}
+				textarea:focus {
+					// Visual
+					border: solid 2px rgba($color: $Ter, $alpha: 1);
+					// Visual effects
+					transition: all 0.2s;
+				}
+
+				select {
+					// Box-model
+					width: 320px;
+					padding: 5px 8px;
+					height: 2.25rem;
+					// Visual
+					border: solid 2px rgba($color: $Ter, $alpha: 0);
+					border-radius: 5px;
+					outline: none;
+					background-color: $Wh;
+					// Typography
+					color: $Bg;
+					font-size: medium;
+					font-weight: 600;
+					// Visual effects
+					transition: all 0.2s;
+				}
+				select:focus {
+					// Visual
+					border: solid 2px rgba($color: $Ter, $alpha: 1);
+					// Visual effects
+					transition: all 0.2s;
+				}
+			}
+		}
+	}
+}
